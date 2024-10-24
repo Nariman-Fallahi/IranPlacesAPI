@@ -3,13 +3,13 @@
 ### نحوه استفاده از API
 
 - **دریافت لیست تمام استان‌ های ایران**  
-  `GET` [https://iranplacesapi.liara.run/api/Provinces](https://iranplacesapi.liara.run/api/Provinces)  
+  `GET` [https://iranplacesapi.liara.run/api/Provinces](https://iranplacesapi.liara.run/api/Provinces)
 
 - **دریافت لیست تمام شهر های ایران**  
-  `GET` [https://iranplacesapi.liara.run/api/cities](https://iranplacesapi.liara.run/api/cities)  
+  `GET` [https://iranplacesapi.liara.run/api/cities](https://iranplacesapi.liara.run/api/cities)
 
 - **دریافت شهر بر اساس آیدی**  
-  `GET` [https://iranplacesapi.liara.run/api/cities/[id]](https://iranplacesapi.liara.run/api/cities/[id])  
+  `GET` [https://iranplacesapi.liara.run/api/cities/[id]](https://iranplacesapi.liara.run/api/cities/[id])
 
 - **دریافت استان بر اساس آیدی**  
   `GET` [https://iranplacesapi.liara.run/api/provinces/[id]](https://iranplacesapi.liara.run/api/provinces/[id])
@@ -23,8 +23,9 @@
   _آیدی شهر باید وارد شود._
 
 ---
+
 ### تشکر ویژه
 
-لیست استان ها و شهرها با استفاده از داده های [این ریپازیتوری](https://github.com/نام-ریپازیتوری) به دست آمده.
+لیست استان ها و شهرها با استفاده از داده های [این ریپازیتوری](https://github.com/sajaddp/list-of-cities-in-Iran) به دست آمده.
 
 با تشکر از توسعه دهندگان این ریپازیتوری.
