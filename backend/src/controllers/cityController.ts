@@ -11,10 +11,6 @@ export const getAllCity = (req: Request, res: Response) => {
 export const getCity = (req: Request, res: Response) => {
   const cityId = req.params.id;
 
-  if (!cityId) {
-    res.status(400).json({ error: "City ID is required" });
-  }
-
   const province = findById(citiesData, Number(cityId));
 
   if (!province) {
@@ -31,7 +27,11 @@ export const getProvinceByCityId = (req: Request, res: Response) => {
   const city = findById(citiesData, Number(cityId));
   const cityProvinceId = city?.province_id;
 
-  const cities = findById(provinceData, Number(cityProvinceId));
+  const province = findById(provinceData, Number(cityProvinceId));
 
-  res.json(cities);
+  if (!province) {
+    res.status(404).json({ error: "Province not found for this city" });
+  }
+
+  res.json(province);
 };
