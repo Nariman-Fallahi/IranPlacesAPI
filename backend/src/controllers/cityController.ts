@@ -1,15 +1,6 @@
 import { Request, Response } from "express";
-import { loadJsonData } from "../utils/loadData";
 import { findById } from "../utils/findById";
-
-export type CitiesDataDataType = {
-  id: number;
-  name: string;
-  slug: string;
-  province_id: number;
-};
-
-const citiesData = loadJsonData<CitiesDataDataType[]>("../data/cities.json");
+import { citiesData, provinceData } from "../data/data";
 
 // getAllCity
 export const getAllCity = (req: Request, res: Response) => {
@@ -31,4 +22,16 @@ export const getCity = (req: Request, res: Response) => {
   }
 
   res.json(province);
+};
+
+// getProvinceByCityId
+export const getProvinceByCityId = (req: Request, res: Response) => {
+  const cityId = req.params.id;
+
+  const city = findById(citiesData, Number(cityId));
+  const cityProvinceId = city?.province_id;
+
+  const cities = findById(provinceData, Number(cityProvinceId));
+
+  res.json(cities);
 };

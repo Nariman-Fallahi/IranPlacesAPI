@@ -1,19 +1,8 @@
 import { Request, Response } from "express";
-import { loadJsonData } from "../utils/loadData";
 import { findById } from "../utils/findById";
-import { CitiesDataDataType } from "./cityController";
-
-type ProvinceDataType = {
-  id: number;
-  name: string;
-  slug: string;
-  tel_prefix: string;
-};
+import { citiesData, provinceData } from "../data/data";
 
 // getAllProvinces
-const provinceData = loadJsonData<ProvinceDataType[]>("../data/provinces.json");
-const citiesData = loadJsonData<CitiesDataDataType[]>("../data/cities.json");
-
 export const getAllProvinces = (req: Request, res: Response) => {
   res.json(provinceData);
 };
@@ -39,9 +28,9 @@ export const getProvince = (req: Request, res: Response) => {
 export const getCitiesByProvinceId = (req: Request, res: Response) => {
   const provinceId = req.params.id;
 
-  const citys = citiesData.filter(
+  const cities = citiesData.filter(
     (item) => item.province_id === Number(provinceId)
   );
 
-  res.json(citys);
+  res.json(cities);
 };
