@@ -6,6 +6,6 @@ import provinceRoutes from "./routes/provinceRoutes.js";
 import cityRoutes from "./routes/cityRoutes.js";
 
 app.use("/api/provinces", provinceRoutes);
-app.use("/api/city", cityRoutes);
+app.use("/api/cities", cityRoutes);
 
 app.listen(3000);
