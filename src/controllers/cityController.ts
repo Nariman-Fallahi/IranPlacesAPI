@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { findById } from "../utils/findById";
-import { citiesData, provinceData } from "../data/data";
+import { findById } from "../utils/findById.js";
+import { citiesData, provinceData } from "../data/data.js";
 
 // getAllCity
 export const getAllCity = (req: Request, res: Response) => {

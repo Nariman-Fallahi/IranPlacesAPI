@@ -5,7 +5,7 @@ import {
   getAllProvinces,
   getCitiesByProvinceId,
   getProvince,
-} from "../controllers/provinceController";
+} from "../controllers/provinceController.js";
 
 router.get("/", getAllProvinces);
 router.get("/:id", getProvince);

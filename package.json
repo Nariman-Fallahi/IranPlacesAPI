@@ -1,10 +1,11 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/app.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon --exec tsx src/app.ts",
-    "build": "tsc",
+    "build": "tsc && cp src/data/*.json dist/data",
     "start": "node dist/app.js"
   },
   "keywords": [],
