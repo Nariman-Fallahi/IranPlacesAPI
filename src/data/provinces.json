@@ -3,186 +3,310 @@
     "id": 1,
     "name": "آذربایجان شرقی",
     "slug": "آذربایجان-شرقی",
-    "tel_prefix": "041"
+    "tel_prefix": "041",
+    "location": {
+      "latitude": 38.412,
+      "longitude": 47.546
+    }
   },
   {
     "id": 2,
     "name": "آذربایجان غربی",
     "slug": "آذربایجان-غربی",
-    "tel_prefix": "044"
+    "tel_prefix": "044",
+    "location": {
+      "latitude": 37.495,
+      "longitude": 45.135
+    }
   },
   {
     "id": 3,
     "name": "اردبیل",
     "slug": "اردبیل",
-    "tel_prefix": "045"
+    "tel_prefix": "045",
+    "location": {
+      "latitude": 38.247,
+      "longitude": 48.201
+    }
   },
   {
     "id": 4,
     "name": "اصفهان",
     "slug": "اصفهان",
-    "tel_prefix": "031"
+    "tel_prefix": "031",
+    "location": {
+      "latitude": 32.655,
+      "longitude": 51.668
+    }
   },
   {
     "id": 5,
     "name": "البرز",
     "slug": "البرز",
-    "tel_prefix": "026"
+    "tel_prefix": "026",
+    "location": {
+      "latitude": 35.887,
+      "longitude": 50.871
+    }
   },
   {
     "id": 6,
     "name": "ایلام",
     "slug": "ایلام",
-    "tel_prefix": "084"
+    "tel_prefix": "084",
+    "location": {
+      "latitude": 33.634,
+      "longitude": 46.408
+    }
   },
   {
     "id": 7,
     "name": "بوشهر",
     "slug": "بوشهر",
-    "tel_prefix": "077"
+    "tel_prefix": "077",
+    "location": {
+      "latitude": 28.989,
+      "longitude": 50.827
+    }
   },
   {
     "id": 8,
     "name": "تهران",
     "slug": "تهران",
-    "tel_prefix": "021"
+    "tel_prefix": "021",
+    "location": {
+      "latitude": 35.689,
+      "longitude": 51.389
+    }
   },
   {
     "id": 9,
     "name": "چهارمحال و بختیاری",
     "slug": "چهارمحال-بختیاری",
-    "tel_prefix": "038"
+    "tel_prefix": "038",
+    "location": {
+      "latitude": 32.209,
+      "longitude": 50.105
+    }
   },
   {
     "id": 10,
     "name": "خراسان جنوبی",
     "slug": "خراسان-جنوبی",
-    "tel_prefix": "056"
+    "tel_prefix": "056",
+    "location": {
+      "latitude": 33.116,
+      "longitude": 59.211
+    }
   },
   {
     "id": 11,
     "name": "خراسان رضوی",
     "slug": "خراسان-رضوی",
-    "tel_prefix": "051"
+    "tel_prefix": "051",
+    "location": {
+      "latitude": 36.288,
+      "longitude": 59.6
+    }
   },
   {
     "id": 12,
     "name": "خراسان شمالی",
     "slug": "خراسان-شمالی",
-    "tel_prefix": "058"
+    "tel_prefix": "058",
+    "location": {
+      "latitude": 37.163,
+      "longitude": 57.579
+    }
   },
   {
     "id": 13,
     "name": "خوزستان",
     "slug": "خوزستان",
-    "tel_prefix": "061"
+    "tel_prefix": "061",
+    "location": {
+      "latitude": 31.769,
+      "longitude": 48.689
+    }
   },
   {
     "id": 14,
     "name": "زنجان",
     "slug": "زنجان",
-    "tel_prefix": "024"
+    "tel_prefix": "024",
+    "location": {
+      "latitude": 36.67,
+      "longitude": 48.695
+    }
   },
   {
     "id": 15,
     "name": "سمنان",
     "slug": "سمنان",
-    "tel_prefix": "023"
+    "tel_prefix": "023",
+    "location": {
+      "latitude": 35.573,
+      "longitude": 53.396
+    }
   },
   {
     "id": 16,
     "name": "سیستان و بلوچستان",
     "slug": "سیستان-بلوچستان",
-    "tel_prefix": "054"
+    "tel_prefix": "054",
+    "location": {
+      "latitude": 30.285,
+      "longitude": 60.547
+    }
   },
   {
     "id": 17,
     "name": "فارس",
     "slug": "فارس",
-    "tel_prefix": "071"
+    "tel_prefix": "071",
+    "location": {
+      "latitude": 29.937,
+      "longitude": 52.583
+    }
   },
   {
     "id": 18,
     "name": "قزوین",
     "slug": "قزوین",
-    "tel_prefix": "028"
+    "tel_prefix": "028",
+    "location": {
+      "latitude": 36.233,
+      "longitude": 50.002
+    }
   },
   {
     "id": 19,
     "name": "قم",
     "slug": "قم",
-    "tel_prefix": "025"
+    "tel_prefix": "025",
+    "location": {
+      "latitude": 34.639,
+      "longitude": 50.876
+    }
   },
   {
     "id": 20,
     "name": "کردستان",
     "slug": "کردستان",
-    "tel_prefix": "087"
+    "tel_prefix": "087",
+    "location": {
+      "latitude": 35.333,
+      "longitude": 46.995
+    }
   },
   {
     "id": 21,
     "name": "کرمان",
     "slug": "کرمان",
-    "tel_prefix": "034"
+    "tel_prefix": "034",
+    "location": {
+      "latitude": 30.283,
+      "longitude": 57.078
+    }
   },
   {
     "id": 22,
     "name": "کرمانشاه",
     "slug": "کرمانشاه",
-    "tel_prefix": "083"
+    "tel_prefix": "083",
+    "location": {
+      "latitude": 34.328,
+      "longitude": 47.061
+    }
   },
   {
     "id": 23,
     "name": "کهگیلویه و بویراحمد",
     "slug": "کهگیلویه-بویراحمد",
-    "tel_prefix": "074"
+    "tel_prefix": "074",
+    "location": {
+      "latitude": 30.642,
+      "longitude": 51.655
+    }
   },
   {
     "id": 24,
     "name": "گلستان",
     "slug": "گلستان",
-    "tel_prefix": "017"
+    "tel_prefix": "017",
+    "location": {
+      "latitude": 37.04,
+      "longitude": 55.195
+    }
   },
   {
     "id": 25,
     "name": "لرستان",
     "slug": "لرستان",
-    "tel_prefix": "066"
+    "tel_prefix": "066",
+    "location": {
+      "latitude": 33.487,
+      "longitude": 48.368
+    }
   },
   {
     "id": 26,
     "name": "گیلان",
     "slug": "گیلان",
-    "tel_prefix": "013"
+    "tel_prefix": "013",
+    "location": {
+      "latitude": 37.287,
+      "longitude": 49.59
+    }
   },
   {
     "id": 27,
     "name": "مازندران",
     "slug": "مازندران",
-    "tel_prefix": "011"
+    "tel_prefix": "011",
+    "location": {
+      "latitude": 36.652,
+      "longitude": 52.102
+    }
   },
   {
     "id": 28,
     "name": "مرکزی",
     "slug": "مرکزی",
-    "tel_prefix": "086"
+    "tel_prefix": "086",
+    "location": {
+      "latitude": 34.121,
+      "longitude": 50.25
+    }
   },
   {
     "id": 29,
     "name": "هرمزگان",
     "slug": "هرمزگان",
-    "tel_prefix": "076"
+    "tel_prefix": "076",
+    "location": {
+      "latitude": 27.186,
+      "longitude": 56.098
+    }
   },
   {
     "id": 30,
     "name": "همدان",
     "slug": "همدان",
-    "tel_prefix": "081"
+    "tel_prefix": "081",
+    "location": {
+      "latitude": 34.793,
+      "longitude": 48.515
+    }
   },
   {
     "id": 31,
     "name": "یزد",
     "slug": "یزد",
-    "tel_prefix": "035"
+    "tel_prefix": "035",
+    "location": {
+      "latitude": 31.441,
+      "longitude": 54.025
+    }
   }
 ]

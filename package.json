@@ -1,6 +1,6 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
+  "name": "iran-places-api",
+  "version": "1.1.0",
   "main": "dist/app.js",
   "type": "module",
   "scripts": {

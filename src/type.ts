@@ -10,4 +10,8 @@ export type CitiesDataDataType = {
   name: string;
   slug: string;
   province_id: number;
+  location: {
+    latitude: string;
+    longitude: string;
+  };
 };

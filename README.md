@@ -1,4 +1,4 @@
-## وب سرویس کامل استان و شهرستان‌های ایران
+## وب سرویس کامل لیست استان و شهر های ایران به همراه موقعیت جغرافیایی
 
 ### نحوه استفاده از API
 
@@ -9,17 +9,23 @@
   `GET` [https://iranplacesapi.liara.run/api/cities](https://iranplacesapi.liara.run/api/cities)
 
 - **دریافت شهر بر اساس آیدی**  
-  `GET` [https://iranplacesapi.liara.run/api/cities/[id]](https://iranplacesapi.liara.run/api/cities/[id])
+  `GET` [https://iranplacesapi.liara.run/api/cities/id/[id]](https://iranplacesapi.liara.run/api/cities/id/[id])
+
+- **دریافت شهر بر اساس نام**  
+  `GET` [https://iranplacesapi.liara.run/api/cities/name/[name]](https://iranplacesapi.liara.run/api/cities/name/[name])
 
 - **دریافت استان بر اساس آیدی**  
-  `GET` [https://iranplacesapi.liara.run/api/provinces/[id]](https://iranplacesapi.liara.run/api/provinces/[id])
+  `GET` [https://iranplacesapi.liara.run/api/provinces/id/[id]](https://iranplacesapi.liara.run/api/provinces/id/[id])
 
-- **دریافت تمام شهرهای یک استان**  
-  `GET` [https://iranplacesapi.liara.run/api/Provinces/[id]/cities](https://iranplacesapi.liara.run/api/Provinces/[id]/cities)  
+- **دریافت استان بر اساس نام**  
+  `GET` [https://iranplacesapi.liara.run/api/provinces/name/[name]](https://iranplacesapi.liara.run/api/provinces/name/[name])
+
+- **دریافت تمام شهرهای یک استان با آیدی**  
+  `GET` [https://iranplacesapi.liara.run/api/Provinces/id/[id]/cities](https://iranplacesapi.liara.run/api/Provinces/id/[id]/cities)  
   _آیدی استان باید وارد شود._
 
-- **دریافت اسم استان یک شهر**  
-  `GET` [https://iranplacesapi.liara.run/api/cities/[id]/province](https://iranplacesapi.liara.run/api/cities/[id]/province)  
+- **دریافت اسم استان یک شهر با آیدی**  
+  `GET` [https://iranplacesapi.liara.run/api/cities/id/[id]/province](https://iranplacesapi.liara.run/api/cities/id/[id]/province)  
   _آیدی شهر باید وارد شود._
 
 ---
@@ -29,3 +35,9 @@
 لیست استان ها و شهرها با استفاده از داده های [این ریپازیتوری](https://github.com/sajaddp/list-of-cities-in-Iran) به دست آمده.
 
 با تشکر از توسعه دهندگان این ریپازیتوری.
+
+---
+
+### نکته
+
+موقعیت جغرافیایی استان ها و شهرها با کمک هوش مصنوعی (ChatGPT) اضافه شده است.

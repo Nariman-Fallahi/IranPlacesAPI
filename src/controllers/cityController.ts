@@ -1,37 +1,50 @@
 import { Request, Response } from "express";
-import { findById } from "../utils/findById.js";
+import { findByProperty } from "../utils/findByProperty.js";
 import { citiesData, provinceData } from "../data/data.js";
 
 // getAllCity
 export const getAllCity = (req: Request, res: Response) => {
-  res.json(citiesData);
+  res.status(200).json(citiesData);
 };
 
-// getCity
-export const getCity = (req: Request, res: Response) => {
+// getCityById
+export const getCityById = (req: Request, res: Response) => {
   const cityId = req.params.id;
 
-  const province = findById(citiesData, Number(cityId));
+  const province = findByProperty(citiesData, "id", Number(cityId));
 
   if (!province) {
     res.status(404).json({ error: "City not found" });
   }
 
-  res.json(province);
+  res.status(200).json(province);
+};
+
+// getCityByName
+export const getCityByName = (req: Request, res: Response) => {
+  const cityName = req.params.name;
+
+  const city = findByProperty(citiesData, "name", cityName);
+
+  if (!city) {
+    res.status(404).json({ error: "City not found" });
+  }
+
+  res.status(200).json(city);
 };
 
 // getProvinceByCityId
 export const getProvinceByCityId = (req: Request, res: Response) => {
   const cityId = req.params.id;
 
-  const city = findById(citiesData, Number(cityId));
+  const city = findByProperty(citiesData, "id", Number(cityId));
   const cityProvinceId = city?.province_id;
 
-  const province = findById(provinceData, Number(cityProvinceId));
+  const province = findByProperty(provinceData, "id", Number(cityProvinceId));
 
   if (!province) {
     res.status(404).json({ error: "Province not found for this city" });
   }
 
-  res.json(province);
+  res.status(200).json(province);
 };
