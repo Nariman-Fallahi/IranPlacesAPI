@@ -26,6 +26,7 @@ export const getProvince = (req: Request, res: Response) => {
   res.status(200).json(province);
 };
 
+// getCitiesByProvince
 export const getCitiesByProvince = (req: Request, res: Response) => {
   const { id, name } = req.params;
 
