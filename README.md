@@ -24,9 +24,17 @@
   `GET` [https://iranplacesapi.liara.run/api/Provinces/id/[id]/cities](https://iranplacesapi.liara.run/api/Provinces/id/[id]/cities)  
   _آیدی استان باید وارد شود._
 
+- **دریافت تمام شهرهای یک استان با نام**  
+  `GET` [https://iranplacesapi.liara.run/api/Provinces/name/[name]/cities](https://iranplacesapi.liara.run/api/Provinces/name/[name]/cities)  
+  _نام استان باید وارد شود._
+
 - **دریافت اسم استان یک شهر با آیدی**  
   `GET` [https://iranplacesapi.liara.run/api/cities/id/[id]/province](https://iranplacesapi.liara.run/api/cities/id/[id]/province)  
   _آیدی شهر باید وارد شود._
+
+- **دریافت اسم استان یک شهر با نام**  
+  `GET` [https://iranplacesapi.liara.run/api/cities/name/[name]/province](https://iranplacesapi.liara.run/api/cities/name/[name]/province)  
+  _نام شهر باید وارد شود._
 
 ---
 

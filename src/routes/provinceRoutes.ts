@@ -3,14 +3,14 @@ const router = express.Router();
 
 import {
   getAllProvinces,
-  getCitiesByProvinceId,
-  getProvinceById,
-  getProvinceByName,
+  getCitiesByProvince,
+  getProvince,
 } from "../controllers/provinceController.js";
 
 router.get("/", getAllProvinces);
-router.get("/id/:id", getProvinceById);
-router.get("/name/:name", getProvinceByName);
-router.get("/id/:id/cities", getCitiesByProvinceId);
+router.get("/id/:id", getProvince);
+router.get("/name/:name", getProvince);
+router.get("/id/:id/cities", getCitiesByProvince);
+router.get("/name/:name/cities");
 
 export default router;

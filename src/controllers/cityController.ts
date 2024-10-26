@@ -7,24 +7,17 @@ export const getAllCity = (req: Request, res: Response) => {
   res.status(200).json(citiesData);
 };
 
-// getCityById
-export const getCityById = (req: Request, res: Response) => {
-  const cityId = req.params.id;
+// getCity
+export const getCity = (req: Request, res: Response) => {
+  const { id, name } = req.params;
 
-  const province = findByProperty(citiesData, "id", Number(cityId));
+  let city;
 
-  if (!province) {
-    res.status(404).json({ error: "City not found" });
+  if (id) {
+    city = findByProperty(citiesData, "id", Number(id));
+  } else if (name) {
+    city = findByProperty(citiesData, "name", name);
   }
-
-  res.status(200).json(province);
-};
-
-// getCityByName
-export const getCityByName = (req: Request, res: Response) => {
-  const cityName = req.params.name;
-
-  const city = findByProperty(citiesData, "name", cityName);
 
   if (!city) {
     res.status(404).json({ error: "City not found" });
@@ -33,11 +26,18 @@ export const getCityByName = (req: Request, res: Response) => {
   res.status(200).json(city);
 };
 
-// getProvinceByCityId
-export const getProvinceByCityId = (req: Request, res: Response) => {
-  const cityId = req.params.id;
+// getProvinceByCity
+export const getProvinceByCity = (req: Request, res: Response) => {
+  const { id, name } = req.params;
 
-  const city = findByProperty(citiesData, "id", Number(cityId));
+  let city;
+
+  if (id) {
+    city = findByProperty(citiesData, "id", Number(id));
+  } else if (name) {
+    city = findByProperty(citiesData, "name", name);
+  }
+
   const cityProvinceId = city?.province_id;
 
   const province = findByProperty(provinceData, "id", Number(cityProvinceId));
