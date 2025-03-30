@@ -30,16 +30,25 @@ export const getProvince = (req: Request, res: Response) => {
 export const getCitiesByProvince = (req: Request, res: Response) => {
   const { id, name } = req.params;
 
-  let cities;
+  let provinceId: number | undefined;
 
   if (id) {
-    cities = citiesData.filter((item) => item.province_id === Number(id));
+    provinceId = Number(id);
   } else if (name) {
-    cities = citiesData.filter((item) => item.name === name);
+    const province = findByProperty(provinceData, "name", name);
+    if (province) {
+      provinceId = province.id;
+    }
   }
 
-  if (cities && cities.length === 0) {
-    res.status(404).json({ error: "No cities found for this province" });
+  if (!provinceId) {
+    return res.status(404).json({ error: "Province not found" });
+  }
+
+  const cities = citiesData.filter((item) => item.province_id === provinceId);
+
+  if (cities.length === 0) {
+    return res.status(404).json({ error: "No cities found for this province" });
   }
 
   res.status(200).json(cities);
