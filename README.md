@@ -3,7 +3,7 @@
 ### نحوه استفاده از API
 
 - **دریافت لیست تمام استان‌ های ایران**  
-  `GET` [https://iranplacesapi.liara.run/api/Provinces](https://iranplacesapi.liara.run/api/Provinces)
+  `GET` [https://iranplacesapi.liara.run/api/provinces](https://iranplacesapi.liara.run/api/provinces)
 
 - **دریافت لیست تمام شهر های ایران**  
   `GET` [https://iranplacesapi.liara.run/api/cities](https://iranplacesapi.liara.run/api/cities)
@@ -21,11 +21,11 @@
   `GET` [https://iranplacesapi.liara.run/api/provinces/name/[name]](https://iranplacesapi.liara.run/api/provinces/name/[name])
 
 - **دریافت تمام شهرهای یک استان با آیدی**  
-  `GET` [https://iranplacesapi.liara.run/api/Provinces/id/[id]/cities](https://iranplacesapi.liara.run/api/Provinces/id/[id]/cities)  
+  `GET` [https://iranplacesapi.liara.run/api/provinces/id/[id]/cities](https://iranplacesapi.liara.run/api/provinces/id/[id]/cities)  
   _آیدی استان باید وارد شود._
 
 - **دریافت تمام شهرهای یک استان با نام**  
-  `GET` [https://iranplacesapi.liara.run/api/Provinces/name/[name]/cities](https://iranplacesapi.liara.run/api/Provinces/name/[name]/cities)  
+  `GET` [https://iranplacesapi.liara.run/api/provinces/name/[name]/cities](https://iranplacesapi.liara.run/api/provinces/name/[name]/cities)  
   _نام استان باید وارد شود._
 
 - **دریافت اسم استان یک شهر با آیدی**  
