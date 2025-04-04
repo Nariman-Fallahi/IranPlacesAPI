@@ -42,13 +42,13 @@ export const getCitiesByProvince = (req: Request, res: Response) => {
   }
 
   if (!provinceId) {
-    return res.status(404).json({ error: "Province not found" });
+    res.status(404).json({ error: "Province not found" });
   }
 
   const cities = citiesData.filter((item) => item.province_id === provinceId);
 
   if (cities.length === 0) {
-    return res.status(404).json({ error: "No cities found for this province" });
+    res.status(404).json({ error: "No cities found for this province" });
   }
 
   res.status(200).json(cities);
